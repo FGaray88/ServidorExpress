@@ -32,6 +32,7 @@ app.get("/productsRandom/", (req, res) => {
     res.json(products[num])
 });
 
+
 app.get("/", (req, res) => {
     res.send("<h1 style='color:green;'> Bienvenido Terrícola </h1>")
     
