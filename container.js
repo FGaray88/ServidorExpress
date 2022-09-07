@@ -101,4 +101,4 @@ const producto5 = {title: "remera", price: 4000, thumbnail: "urlremera"};
 // cont1.getAll()
 // cont1.save(producto1)
 
-module.exports = new Contenedor ("./products.json")
+module.exports = Contenedor
