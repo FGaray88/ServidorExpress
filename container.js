@@ -28,16 +28,17 @@ class Contenedor {
         const found = data.find(p => p.id === Number);
 
         if(found === undefined){
-            console.log("no se ha encontrado el item")
+            const text = "no se ha encontrado el item";
+            return text;
         }else {
             const filtro = data.filter(product => product.id ===Number);
-            console.log(filtro)
+            return filtro;
         }
     }
 
     async getAll() {
-        const data = await leerArchivo(this.archivo)
-        console.log(data)
+        const data = await leerArchivo(this.archivo);
+        return data;
     }
 
     async deleteById(Number) {
